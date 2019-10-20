@@ -68,5 +68,5 @@ def checkout(cart, coupons)
     puts "total greater than $100, now set to #{total}"
   end
   total
-  puts "bill = #{bill}"
+  puts "bill = #{total}"
 end
