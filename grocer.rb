@@ -55,8 +55,7 @@ def checkout(cart, coupons)
   coupon_cart = apply_coupons(checkout_cart, coupons)
   clearance_cart = apply_clearance(coupon_cart)
   
-  puts "clearance_cart = #{clearance_cart}"
-  puts "coupon_cart = #{coupon_cart}"
+  #puts "clearance_cart = #{clearance_cart}"
   
   total = 0.0 #=> set init total to $0.00
   clearance_cart.keys.each do |item|
