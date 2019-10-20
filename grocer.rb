@@ -61,7 +61,7 @@ def checkout(cart, coupons)
   total = 0.0 #=> set init total to $0.00
   clearance_cart.keys.each do |item|
     total += clearance_cart[item][:price]*clearance_cart[item][:count]
-    puts item
+    puts clearance_cart[item]
     puts "total = #{total}"
   end
   if total > 100
