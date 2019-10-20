@@ -67,6 +67,6 @@ def checkout(cart, coupons)
     (total * 0.90).round
     puts "total greater than $100, now set to #{total}"
   end
-
+  total
   puts "bill = #{bill}"
 end
