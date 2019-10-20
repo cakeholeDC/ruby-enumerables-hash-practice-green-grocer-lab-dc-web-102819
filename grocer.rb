@@ -59,7 +59,6 @@ def checkout(cart, coupons)
   puts "coupon_cart = #{coupon_cart}"
   
   total = 0.0 #=> set init total to $0.00
-  puts clearance_cart.keys
   clearance_cart.keys.each do |item|
     total += clearance_cart[item][:price]*clearance_cart[item][:count]
     puts item
