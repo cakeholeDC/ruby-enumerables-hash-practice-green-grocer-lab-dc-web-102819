@@ -63,7 +63,10 @@ def checkout(cart, coupons)
   clearance_cart.keys.each do |item|
     total += clearance_cart[item][:price]*clearance_cart[item][:count]
   end
-  total > 100 ? (total * 0.90).round : total
+  if total > 100
+    (total * 0.90).round
+    puts "total greater than $100, now set to #{total}"
+  end
 
   puts "bill = #{bill}"
 end
